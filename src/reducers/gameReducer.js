@@ -5,7 +5,8 @@ const initialState = {
   correctNumber: null,
   loading: true,
   message: "Feelin' lucky?",
-  style: "neutral"
+  style: "neutral",
+  victory: false
 };
 
 export const gameReducer = (state = initialState, action) => {
@@ -37,7 +38,9 @@ export const gameReducer = (state = initialState, action) => {
       return {
         ...state,
         message: action.message,
-        style: action.style
+        style: action.style,
+        victory: true
+
       };
   }
 

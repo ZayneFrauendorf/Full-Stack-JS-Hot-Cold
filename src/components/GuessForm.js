@@ -41,7 +41,7 @@ class GuessForm extends Component {
   };
 
   render() {
-    return (
+    return this.props.victory === false ? (
       <div className="guessForm">
         <form>
           <input
@@ -57,6 +57,23 @@ class GuessForm extends Component {
           <label>Guess# {this.props.guesses}</label>
         </form>
       </div>
+    ) : (
+      <div className="guessForm">
+        <form>
+          <input
+            type="text"
+            autoFocus
+            required
+            disabled
+            placeholder="Enter your guess!"
+            value={this.state.value}
+            onChange={e => this._handleInputChange(e.target.value)}
+            onKeyDown={e => this._handleKeyDown(e)}
+          />
+          <input disabled onClick={this._handleSubmit} type="button" value="Guess" />
+          <label>Guess# {this.props.guesses}</label>
+        </form>
+      </div>
     );
   }
 }
@@ -64,7 +81,8 @@ class GuessForm extends Component {
 const mapStateToProps = state => {
   return {
     notification: state.notificationReducer.notification,
-    correctNumber: state.gameReducer.correctNumber
+    correctNumber: state.gameReducer.correctNumber,
+    victory: state.gameReducer.victory
   };
 };
 
