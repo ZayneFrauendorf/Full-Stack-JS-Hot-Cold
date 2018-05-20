@@ -45,9 +45,11 @@ class GuessForm extends Component {
       <div className="guessForm">
         <form>
           <input
-            type="text"
+            type="number"
             autoFocus
             required
+            min="1"
+            max="50"
             placeholder="Enter your guess!"
             value={this.state.value}
             onChange={e => this._handleInputChange(e.target.value)}
@@ -61,7 +63,7 @@ class GuessForm extends Component {
       <div className="guessForm">
         <form>
           <input
-            type="text"
+            type="number"
             autoFocus
             required
             disabled
