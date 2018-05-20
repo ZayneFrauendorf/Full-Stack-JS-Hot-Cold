@@ -16,7 +16,7 @@ class GuessForm extends Component {
 
   _validate = () => {
     let value = parseInt(this.state.value);
-    if (value >= 50 || value < 0 || isNaN(value)) {
+    if (value >= 51 || value < 0 || isNaN(value)) {
       this.props.dispatch(setNotification("error", "ENTER # BETWEEN 1 AND 50"));
     } else {
       this.props.dispatch(setNotification("none", ""));
