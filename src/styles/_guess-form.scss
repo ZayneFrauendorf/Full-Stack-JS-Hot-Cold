@@ -1,0 +1,26 @@
+.guessForm {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 250px;
+    padding: 10px;
+
+    input {
+      height: 34px;
+      border-radius: 2px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    label {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 32px;
+      margin: 0 0 72px;
+      text-align: center;
+    }
+  }
+}

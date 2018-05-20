@@ -1,0 +1,42 @@
+.App {
+  &-victory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    background: linear-gradient(#d10000, #23568f);
+    padding: 12px;
+  }
+  &-neutral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    background: linear-gradient(#d10000, #23568f);
+    padding: 12px;
+  }
+  &-hot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    background: #d10000;
+    padding: 12px;
+  }
+  &-cold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    background-color: #23568f;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@import "./_app";
+@import "./_game-title";
+@import "./_guess-form";
+@import "./_top-message";
+@import "./guess-history";
+@import "./_notification";

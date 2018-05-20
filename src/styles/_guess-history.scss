@@ -1,0 +1,20 @@
+.guess-history {
+  background-color: #001514;
+  min-height: 30px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+
+  label {
+    color: black;
+    background-color: #ffffff;
+    margin: 4px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px;
+  }
+}
